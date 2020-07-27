@@ -39,6 +39,7 @@ module.exports = function(source) {
                 const width = filelist[count - 1].size.split('x')[0];
                 const scale = filelist[count - 1].scale.charAt(0);
                 const scaledSize = width * scale;
+                console.log(i);
                 //bar.tick(i - 1);
                 const filepath = path.join(workingdir, '/' + filelist[count - 1].filename);
                 resizeAndSaveIcon(source, filepath, scaledSize);    
