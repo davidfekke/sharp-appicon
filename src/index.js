@@ -5,7 +5,6 @@ class SharpAppiconCommand extends Command {
   async run() {
     const {flags, args } = this.parse(SharpAppiconCommand)
     const filename = args.iconfile || 'Appicon.png';
-    //this.log(`hello ${filename} from ./src/index.js`);
     appicon(filename);
   }
 }

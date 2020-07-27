@@ -2,6 +2,7 @@ const sharp = require('sharp');
 const path = require('path');
 const fs = require('fs');
 //const cluster  = require('cluster');
+const progress = require('cli-progress');
 const ProgressBar = require('progress');
 const getfilelist = require('./getfilelist');
 
@@ -18,6 +19,8 @@ module.exports = function(source) {
     const androidPath = path.join(__dirname, '../android.json');
     const workingdir = process.cwd();
     const androidArray = require(androidPath);
+    const bar1 = new progress.SingleBar({}, progress.Presets.shades_classic);
+
 
     for (let i = 0; i < androidArray.length; i++) {
         const filename = androidArray[i].filename;
@@ -31,15 +34,19 @@ module.exports = function(source) {
     //     width: 20,
     // });
 
+    
+
     fs.mkdir('Icons', () => {
         fs.mkdir('Icons/AppIcon.appiconset', () => {
             fs.createReadStream(contentFile).pipe(fs.createWriteStream('Icons/AppIcon.appiconset/Contents.json'));
+            bar1.start(filelist.length - 1, 0);
             for (var i = 0; i < filelist.length; i++) {
                 const count = i + 1;
                 const width = filelist[count - 1].size.split('x')[0];
                 const scale = filelist[count - 1].scale.charAt(0);
                 const scaledSize = width * scale;
-                console.log(i);
+                bar1.update(i);
+                if (i === (filelist.length -1)) bar1.stop();
                 //bar.tick(i - 1);
                 const filepath = path.join(workingdir, '/' + filelist[count - 1].filename);
                 resizeAndSaveIcon(source, filepath, scaledSize);    

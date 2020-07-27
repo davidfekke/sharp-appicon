@@ -11,6 +11,7 @@
     "@oclif/command": "^1.7.0",
     "@oclif/config": "^1.16.0",
     "@oclif/plugin-help": "^2.2.3",
+    "cli-progress": "^3.8.2",
     "sharp": "^0.25.4"
   },
   "devDependencies": {
@@ -36,6 +37,7 @@
   "oclif": {
     "bin": "appicon"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "repository": "davidfekke/sharp-appicon",
   "scripts": {
     "posttest": "eslint .",
