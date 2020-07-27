@@ -1,0 +1,44 @@
+{
+  "name": "sharp-appicon",
+  "description": "A CLI for generating AppIcons for iOS and Android applications",
+  "version": "0.0.1",
+  "author": "davidfekke @davidfekke",
+  "bin": {
+    "appicon": "./bin/run"
+  },
+  "bugs": "https://github.com/davidfekke/sharp-appicon/issues",
+  "dependencies": {
+    "@oclif/command": "^1.7.0",
+    "@oclif/config": "^1.16.0",
+    "@oclif/plugin-help": "^2.2.3",
+    "sharp": "^0.25.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src",
+    "Contents.json",
+    "android.json",
+    "SampleAppicon.png"
+  ],
+  "homepage": "https://github.com/davidfekke/sharp-appicon",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "appicon"
+  },
+  "repository": "davidfekke/sharp-appicon",
+  "scripts": {
+    "posttest": "eslint .",
+    "test": "echo NO TESTS"
+  }
+}
