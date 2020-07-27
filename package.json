@@ -1,8 +1,8 @@
 {
   "name": "sharp-appicon",
   "description": "A CLI for generating AppIcons for iOS and Android applications",
-  "version": "0.0.1",
-  "author": "davidfekke @davidfekke",
+  "version": "0.0.2",
+  "author": "davidfekke",
   "bin": {
     "appicon": "./bin/run"
   },
@@ -37,7 +37,6 @@
   "oclif": {
     "bin": "appicon"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "repository": "davidfekke/sharp-appicon",
   "scripts": {
     "posttest": "eslint .",
