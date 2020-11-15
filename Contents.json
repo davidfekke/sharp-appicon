@@ -31,7 +31,7 @@
             "filename":"Icon-App-29x29@3x.png"
         },
         {
-            "idiom":"iphone",
+            "idiom":"ipad",
             "size":"40x40",
             "scale":"1x",
             "filename":"Icon-App-40x40@1x.png"
@@ -63,12 +63,6 @@
         {
             "idiom":"iphone",
             "size":"60x60",
-            "scale":"1x",
-            "filename":"Icon-App-60x60@1x.png"
-        },
-        {
-            "idiom":"iphone",
-            "size":"60x60",
             "scale":"2x",
             "filename":"Icon-App-60x60@2x.png"
         },
@@ -79,7 +73,7 @@
             "filename":"Icon-App-60x60@3x.png"
         },
         {
-            "idiom":"iphone",
+            "idiom":"ipad",
             "size":"76x76",
             "scale":"1x",
             "filename":"Icon-App-76x76@1x.png"
@@ -108,12 +102,7 @@
             "scale":"2x",
             "filename":"Icon-App-29x29@2x.png"
         },
-        {
-            "idiom":"ipad",
-            "size":"40x40",
-            "scale":"1x",
-            "filename":"Icon-App-40x40@1x.png"
-        },
+        
         {
             "idiom":"ipad",
             "size":"40x40",
@@ -123,27 +112,21 @@
         {
             "idiom":"ipad",
             "size":"76x76",
-            "scale":"1x",
-            "filename":"Icon-App-76x76@1x.png"
-        },
-        {
-            "idiom":"ipad",
-            "size":"76x76",
             "scale":"2x",
             "filename":"Icon-App-76x76@2x.png"
-        },
-        {
-            "idiom":"ipad",
-            "size":"76x76",
-            "scale":"3x",
-            "filename":"Icon-App-76x76@3x.png"
         },
         {
             "idiom":"ipad",
             "size":"83.5x83.5",
             "scale":"2x",
             "filename":"Icon-App-83.5x83.5@2x.png"
-        }
+        },
+        {
+            "idiom" : "ios-marketing",
+            "size" : "1024x1024",
+            "scale" : "1x",
+            "filename": "App Store iOS 1024pt.png"
+          }
     ],
     "info":{
         "version":1,
