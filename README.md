@@ -9,7 +9,19 @@ A CLI for generating AppIcons for iOS and Android applications
 [![License](https://img.shields.io/npm/l/sharp-appicon.svg)](https://github.com/davidfekke/sharp-appicon/blob/master/package.json)
 
 <!-- toc -->
+* [Usage](#usage)
+<!-- tocstop -->
 # Usage
 <!-- usage -->
-# Commands
-<!-- commands -->
+```sh-session
+$ npm install -g sharp-appicon
+$ appicon COMMAND
+running command...
+$ appicon (-v|--version|version)
+sharp-appicon/0.2.1 darwin-x64 node-v14.15.0
+$ appicon --help [COMMAND]
+USAGE
+  $ appicon COMMAND
+...
+```
+<!-- usagestop -->
