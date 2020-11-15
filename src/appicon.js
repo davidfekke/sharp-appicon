@@ -27,15 +27,6 @@ module.exports = function(source) {
         createDirectoryTree(filename);
     }
 
-    // let bar = new ProgressBar('Processing images [:bar] :rate/bps :percent :etas', {
-    //     total: filelist.length,
-    //     complete: '=',
-    //     incomplete: ' ',
-    //     width: 20,
-    // });
-
-    
-
     fs.mkdir('Icons', () => {
         fs.mkdir('Icons/AppIcon.appiconset', () => {
             fs.createReadStream(contentFile).pipe(fs.createWriteStream('Icons/AppIcon.appiconset/Contents.json'));
@@ -84,16 +75,6 @@ function errorHdl(err) {
 function checkDirectory(directory, callback) {
     const myPath = directory + '/';
     if (!fs.existsSync(myPath)) {
-        fs.mkdirSync(directory); // , callback
-        //console.log(`Creating directory ${directory}`);
+        fs.mkdirSync(directory);
     }
-    // fs.stat(myPath, function(err, stats) {
-    //     if (err && err.errno === -2) {
-    //         fs.mkdir(directory, callback);
-    //     } else {
-    //         if (err !== null) {
-    //             callback(err);
-    //         }
-    //     }
-    // });
 }

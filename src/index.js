@@ -11,8 +11,14 @@ class SharpAppiconCommand extends Command {
 
 SharpAppiconCommand.description = `Use this command to generate Appicons for your Android and iOS applications
 ...
-To generate and set of appicons for your mobile app, simple type appicon and the name of your png file.
+To generate and set of appicons for your mobile app, simply type appicon and the name of your png file.
 `;
+
+SharpAppiconCommand.examples = [
+  `$ appicon myicon.png
+████████████████████████████████████████ 100% | ETA: 0s | 73/73
+`
+];
 
 SharpAppiconCommand.args = [
   {name: 'iconfile'}
